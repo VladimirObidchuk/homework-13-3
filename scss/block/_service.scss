@@ -1,0 +1,59 @@
+$raleway: "ralewaythin", sans-serif;
+.service {
+  &__block {
+    width: 1500px;
+    height: 790px;
+    display: flex;
+    background: #70bfff;
+    font-family: $raleway;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30%;
+    align-items: center;
+  }
+  .row {
+    --bs-gutter-x: 0;
+  }
+
+  &__iten {
+    display: flex;
+    text-align: center;
+    padding-top: 5%;
+  }
+
+  &__text {
+    width: 300px;
+    height: 100px;
+    background: #ffffff;
+    padding-top: 5%;
+  }
+
+  &__imeg {
+    width: 100px;
+    height: 100px;
+    background: #ffffff;
+    padding-top: 5%;
+    border-left: 1px solid rgb(80, 75, 75);
+  }
+
+  &__icon {
+    width: 462px;
+    height: 527px;
+    background: url("/img/Tomatoes.png") center center no-repeat;
+    margin-left: 1%;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 90px;
+    line-height: 106px;
+    // text-align: center;
+    color: #ffffff;
+  }
+}

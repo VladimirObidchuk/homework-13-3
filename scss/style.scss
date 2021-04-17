@@ -1,0 +1,18 @@
+::after,
+::before,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@import "../scss/block/navigation";
+@import "../scss/block/about";
+@import "../scss/block/service";
+@import "../scss/block/galery";
+@import "../scss/block/forms";
+@import "../scss/block/blog";
+@import "../scss/block/service_list";
+@import "./libs/font";
+
+$raleway: "ralewaythin", sans-serif;

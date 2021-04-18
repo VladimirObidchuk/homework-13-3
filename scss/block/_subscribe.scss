@@ -3,19 +3,74 @@ $raleway: "ralewaythin", sans-serif;
   &__body {
     width: 1500px;
     height: 500px;
-    background: url("img/BG1.png");
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    justify-content: center;
+    background: url("/img/BG1.png") center center no-repeat;
+    font-family: $raleway;
     margin: 0 auto;
   }
+  &__header {
+    display: flex;
+    justify-content: center;
+    margin: 0 10% 3%;
+  }
 
-  //   &__title {
-  //   }
+  &__title {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 47px;
+    color: #262626;
+  }
 
-  //   &__text {
-  //   }
-
-  //   &__input {
-  //   }
-
-  //   &__button {
-  //   }
+  &__text {
+    width: 479px;
+    height: 60px;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 22px;
+    color: #262626;
+    // padding: 5% 0;
+  }
+  &__enter {
+    display: flex;
+    align-items: center;
+  }
+  &__input #email {
+    width: 570px;
+    height: 55px;
+    display: flex;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.5);
+    padding-left: 3%;
+    margin-left: 20%;
+    border: 1px solid #262626;
+  }
+  &__input #email::placeholder {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  &__button {
+    width: 170px;
+    height: 55px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #96b92c;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    border: none;
+  }
+  &__button:hover {
+    transform: scale(1.1);
+    color: salmon;
+    background: orangered;
+  }
 }

@@ -285,6 +285,84 @@
   border: none;
 }
 
+.subscribe__body {
+  width: 1500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: url("/img/BG1.png") center center no-repeat;
+  font-family: "ralewaythin", sans-serif;
+  margin: 0 auto;
+}
+
+.subscribe__header {
+  display: flex;
+  justify-content: center;
+  margin: 0 10% 3%;
+}
+
+.subscribe__title {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 47px;
+  color: #262626;
+}
+
+.subscribe__text {
+  width: 479px;
+  height: 60px;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 22px;
+  color: #262626;
+}
+
+.subscribe__enter {
+  display: flex;
+  align-items: center;
+}
+
+.subscribe__input #email {
+  width: 570px;
+  height: 55px;
+  display: flex;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.5);
+  padding-left: 3%;
+  margin-left: 20%;
+  border: 1px solid #262626;
+}
+
+.subscribe__input #email::placeholder {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.subscribe__button {
+  width: 170px;
+  height: 55px;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #96b92c;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  border: none;
+}
+
+.subscribe__button:hover {
+  transform: scale(1.1);
+  color: salmon;
+  background: orangered;
+}
+
 @font-face {
   font-family: "ralewaythin";
   src: url("../raleway-variablefont_wght-webfont.eot");

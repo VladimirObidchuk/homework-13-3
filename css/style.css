@@ -2,6 +2,12 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  transition: 0.5s;
+}
+
+* .img-fluid {
+  max-width: 100%;
+  height: auto;
 }
 
 .nav {
@@ -207,14 +213,16 @@
 
 .gallery__block {
   width: 1500px;
-  height: 1536px;
   display: flex;
   flex-direction: column;
   background: #ffe92f;
   font-family: "ralewaythin", sans-serif;
-  justify-content: center;
   align-items: center;
   margin: 0 auto;
+}
+
+.gallery__header {
+  margin: 5% 0 5%;
 }
 
 .gallery__title {
@@ -223,6 +231,7 @@
   line-height: 106px;
   text-align: center;
   color: #262626;
+  margin: 0;
 }
 
 .gallery__text {
@@ -234,6 +243,46 @@
   line-height: 20px;
   text-align: center;
   color: #262626;
+  padding: 5% 0 5%;
+}
+
+.gallery__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery .body__icon:hover {
+  transform: scale(1.1);
+}
+
+.gallery .icon__body {
+  display: flex;
+}
+
+.gallery .icon__body1 {
+  display: flex;
+}
+
+.gallery__footer {
+  margin: 3% 0 7%;
+}
+
+.gallery button {
+  width: 200px;
+  height: 55px;
+  background: #5585a2;
+  box-shadow: 0px 5px 7px rgba(5, 5, 5, 0.5);
+  outline: none;
+}
+
+.gallery button:hover {
+  background: #9ad891;
+  color: white;
+  box-shadow: 0px 2px 5px rgba(170, 221, 162, 0.911);
+  transform: scale(1.1);
+  outline: none;
+  border: none;
 }
 
 @font-face {
@@ -242,5 +291,10 @@
   src: url("../raleway-variablefont_wght-webfont.eot?#iefix") format("embedded-opentype"), url("../raleway-variablefont_wght-webfont.woff2") format("woff2"), url("../raleway-variablefont_wght-webfont.woff") format("woff"), url("../raleway-variablefont_wght-webfont.ttf") format("truetype"), url("../raleway-variablefont_wght-webfont.svg#ralewaythin") format("svg");
   font-weight: normal;
   font-style: normal;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
 }
 /*# sourceMappingURL=style.css.map */

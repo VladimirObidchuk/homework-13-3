@@ -3,25 +3,23 @@ $raleway: "ralewaythin", sans-serif;
 .gallery {
   &__block {
     width: 1500px;
-    height: 1536px;
     display: flex;
     flex-direction: column;
     background: #ffe92f;
     font-family: $raleway;
-    justify-content: center;
     align-items: center;
     margin: 0 auto;
   }
-
-  // &__header {
-  // }
-
+  &__header {
+    margin: 5% 0 5%;
+  }
   &__title {
     font-weight: bold;
     font-size: 90px;
     line-height: 106px;
     text-align: center;
     color: #262626;
+    margin: 0;
   }
 
   &__text {
@@ -33,26 +31,47 @@ $raleway: "ralewaythin", sans-serif;
     line-height: 20px;
     text-align: center;
     color: #262626;
+    padding: 5% 0 5%;
+  }
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  // .body__icon {
+  //   display: flex;
+  //   flex-direction: column;
+  //   // position: relative;
+  //   margin: 0;
+  // }
+  .body__icon:hover {
+    transform: scale(1.1);
+  }
+  .icon__body {
+    display: flex;
+    // justify-content: center;
+  }
+  .icon__body1 {
+    display: flex;
+    // justify-content: center;
   }
 
-  // &__body {
-  // }
-
-  // &__footer {
-  // }
-  //  }
-  // .row {
-  // }
-  // .col {
-  // }
-  // .body {
-
-  //   &__icon {
-  //   }
-
-  //   &__icon1 {
-  //   }
-
-  //   &__icon2 {
-  //   }
+  &__footer {
+    margin: 3% 0 7%;
+  }
+  button {
+    width: 200px;
+    height: 55px;
+    background: #5585a2;
+    box-shadow: 0px 5px 7px rgba(5, 5, 5, 0.5);
+    outline: none;
+  }
+  button:hover {
+    background: rgb(154, 216, 145);
+    color: white;
+    box-shadow: 0px 2px 5px rgba(170, 221, 162, 0.911);
+    transform: scale(1.1);
+    outline: none;
+    border: none;
+  }
 }

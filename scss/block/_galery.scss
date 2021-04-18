@@ -1,0 +1,58 @@
+$raleway: "ralewaythin", sans-serif;
+
+.gallery {
+  &__block {
+    width: 1500px;
+    height: 1536px;
+    display: flex;
+    flex-direction: column;
+    background: #ffe92f;
+    font-family: $raleway;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  // &__header {
+  // }
+
+  &__title {
+    font-weight: bold;
+    font-size: 90px;
+    line-height: 106px;
+    text-align: center;
+    color: #262626;
+  }
+
+  &__text {
+    width: 623px;
+    height: 60px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+    color: #262626;
+  }
+
+  // &__body {
+  // }
+
+  // &__footer {
+  // }
+  //  }
+  // .row {
+  // }
+  // .col {
+  // }
+  // .body {
+
+  //   &__icon {
+  //   }
+
+  //   &__icon1 {
+  //   }
+
+  //   &__icon2 {
+  //   }
+}

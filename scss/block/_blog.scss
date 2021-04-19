@@ -16,9 +16,10 @@ $raleway: "ralewaythin", sans-serif;
   &__title {
     font-weight: bold;
     font-size: 90px;
-    line-height: 106px;
+    line-height: 80px;
     text-align: center;
     color: #0a0a0a;
+    margin: 3%;
   }
 
   &__text {
@@ -36,7 +37,7 @@ $raleway: "ralewaythin", sans-serif;
   &__body {
     display: flex;
     justify-content: center;
-    margin-bottom: 70px;
+    margin-bottom: 2%;
   }
 }
 .body {
@@ -46,7 +47,7 @@ $raleway: "ralewaythin", sans-serif;
     background: rgba(38, 38, 38, 0.5);
     border-radius: 5px;
     text-align: center;
-    margin: 30px;
+    margin: 4% 7% 0;
   }
 
   &__content1 {
@@ -57,26 +58,25 @@ $raleway: "ralewaythin", sans-serif;
     justify-content: space-around;
     color: #ffffff;
     background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
-    margin-left: 30px;
-    background: url(../img/thumbnail.png) no-repeat;
+    background: url(../img/thumbnail.png) center no-repeat;
     transition: 1s;
   }
   &__content1:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 
   &__title {
     font-weight: bold;
     font-size: 32px;
-    line-height: 28px;
+    line-height: 39px;
+    margin: 0;
   }
 
   &__text {
     font-weight: 900;
     font-size: 21px;
-    line-height: 38px;
+    line-height: 10px;
     text-transform: uppercase;
-    margin-top: 10px;
   }
 
   &__content2 {
@@ -87,12 +87,12 @@ $raleway: "ralewaythin", sans-serif;
     justify-content: space-around;
     color: #ffffff;
     background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
-    margin-left: 30px;
-    background: url(../img/thumbnail1.png) no-repeat;
+    margin-left: 10%;
+    background: url(../img/thumbnail1.png) center no-repeat;
     transition: 1s;
   }
   &__content2:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
   &__content3 {
     width: 370px;
@@ -102,12 +102,12 @@ $raleway: "ralewaythin", sans-serif;
     justify-content: space-around;
     color: #ffffff;
     background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
-    margin-left: 30px;
-    background: url(../img/thumbnail2.png) no-repeat;
+    margin-left: 20%;
+    background: url(../img/thumbnail2.png) center no-repeat;
     transition: 1s;
   }
   &__content3:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 }
 .content {
@@ -115,7 +115,7 @@ $raleway: "ralewaythin", sans-serif;
     font-weight: bold;
     font-size: 20px;
     line-height: 23px;
-    margin: 83px 0 20px 20px;
+    margin: 30% 10% 2%;
   }
 
   &__text {
@@ -132,16 +132,14 @@ $raleway: "ralewaythin", sans-serif;
 // }
 .button {
   &_view {
-    width: 200px;
+    width: 15%;
     height: 55px;
-    left: 650px;
-    top: 717px;
     color: rgb(241, 234, 234);
     background: #f72b3b;
     border: none;
     outline: none;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
-    margin-left: 45%;
+    margin: 2% 43% 5%;
     transition: 1s;
   }
   &_view:hover {

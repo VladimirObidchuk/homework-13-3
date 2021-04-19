@@ -285,6 +285,202 @@
   border: none;
 }
 
+.contact__block {
+  width: 1500px;
+  height: 866px;
+  background: url("../img/BG2.png") center center no-repeat;
+  background-size: contain;
+  font-family: "ralewaythin", sans-serif;
+  margin: 0 auto;
+}
+
+.contact__title {
+  font-weight: bold;
+  font-size: 90px;
+  line-height: 20px;
+  text-align: center;
+  color: #262626;
+  padding: 2% 0 1%;
+  margin: 5% 0 2%;
+}
+
+.contact__text {
+  width: 346px;
+  height: 50px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 25px;
+  color: #262626;
+  text-align: center;
+}
+
+.contact__body {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  color: #262626;
+}
+
+.contact___fields {
+  margin: 2% 0 0;
+}
+
+.contact__name {
+  margin-bottom: 15px;
+  border: none;
+  background: rgba(0, 196, 196, 0.5);
+  width: 558px;
+  height: 50px;
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.contact__email {
+  margin-bottom: 15px;
+  border: none;
+  background: rgba(0, 196, 196, 0.5);
+  width: 558px;
+  height: 50px;
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.contact__email::placeholder, .contact__name::placeholder, .contact__tel::placeholder,
+.contact textarea::placeholder {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
+  padding: 10px;
+}
+
+.contact__tel {
+  margin-bottom: 15px;
+  border: none;
+  background: rgba(0, 196, 196, 0.5);
+  width: 558px;
+  height: 50px;
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.contact textarea {
+  width: 558px;
+  height: 250px;
+  background: rgba(0, 196, 196, 0.5);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
+  border: none;
+}
+
+.contact input[type="number"]::-webkit-outer-spin-button,
+.contact input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.contact__address {
+  font-size: 17px;
+  line-height: 25px;
+  color: #262626;
+}
+
+.contact__email1 {
+  font-size: 17px;
+  line-height: 25px;
+  color: #262626;
+}
+
+.contact__phone {
+  font-size: 17px;
+  line-height: 25px;
+  color: #262626;
+}
+
+.contact__button {
+  margin: 2% 0 2%;
+}
+
+.contact__footer {
+  width: 1500px;
+  height: 90px;
+  background: #262626;
+  font-weight: 300;
+  line-height: 19px;
+  color: #b9b9b9;
+  border: none;
+  outline: none;
+  margin-top: -1px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contact__logo {
+  width: 64px;
+  height: 27px;
+  margin: 0 5% 0;
+}
+
+.contact .address__name {
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.contact .email__name {
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.contact .phone__name {
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.contact .button__apply {
+  width: 20%;
+  height: 55px;
+  color: #f1eaea;
+  background: rgba(0, 196, 196, 0.5);
+  border: none;
+  outline: none;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  margin-left: 40%;
+  transition: 1s;
+}
+
+.contact .button__apply:hover {
+  transform: scale(1.1);
+  background: rgba(16, 116, 116, 0.8);
+}
+
+.contact_copyright {
+  float: left;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #b9b9b9;
+  text-align: left;
+}
+
+.contact__made__text {
+  color: #c44e4e;
+}
+
 .blog__block {
   width: 1500px;
   height: 864px;
@@ -301,9 +497,10 @@
 .blog__title {
   font-weight: bold;
   font-size: 90px;
-  line-height: 106px;
+  line-height: 80px;
   text-align: center;
   color: #0a0a0a;
+  margin: 3%;
 }
 
 .blog__text {
@@ -321,7 +518,7 @@
 .blog__body {
   display: flex;
   justify-content: center;
-  margin-bottom: 70px;
+  margin-bottom: 2%;
 }
 
 .body_header {
@@ -330,7 +527,7 @@
   background: rgba(38, 38, 38, 0.5);
   border-radius: 5px;
   text-align: center;
-  margin: 30px;
+  margin: 4% 7% 0;
 }
 
 .body__content1 {
@@ -341,27 +538,26 @@
   justify-content: space-around;
   color: #ffffff;
   background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
-  margin-left: 30px;
-  background: url(../img/thumbnail.png) no-repeat;
+  background: url(../img/thumbnail.png) center no-repeat;
   transition: 1s;
 }
 
 .body__content1:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .body__title {
   font-weight: bold;
   font-size: 32px;
-  line-height: 28px;
+  line-height: 39px;
+  margin: 0;
 }
 
 .body__text {
   font-weight: 900;
   font-size: 21px;
-  line-height: 38px;
+  line-height: 10px;
   text-transform: uppercase;
-  margin-top: 10px;
 }
 
 .body__content2 {
@@ -372,13 +568,13 @@
   justify-content: space-around;
   color: #ffffff;
   background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
-  margin-left: 30px;
-  background: url(../img/thumbnail1.png) no-repeat;
+  margin-left: 10%;
+  background: url(../img/thumbnail1.png) center no-repeat;
   transition: 1s;
 }
 
 .body__content2:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .body__content3 {
@@ -389,20 +585,20 @@
   justify-content: space-around;
   color: #ffffff;
   background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
-  margin-left: 30px;
-  background: url(../img/thumbnail2.png) no-repeat;
+  margin-left: 20%;
+  background: url(../img/thumbnail2.png) center no-repeat;
   transition: 1s;
 }
 
 .body__content3:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .content__title {
   font-weight: bold;
   font-size: 20px;
   line-height: 23px;
-  margin: 83px 0 20px 20px;
+  margin: 30% 10% 2%;
 }
 
 .content__text {
@@ -414,16 +610,14 @@
 }
 
 .button_view {
-  width: 200px;
+  width: 15%;
   height: 55px;
-  left: 650px;
-  top: 717px;
   color: #f1eaea;
   background: #f72b3b;
   border: none;
   outline: none;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
-  margin-left: 45%;
+  margin: 2% 43% 5%;
   transition: 1s;
 }
 

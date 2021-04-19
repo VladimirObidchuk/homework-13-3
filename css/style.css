@@ -352,18 +352,7 @@
   color: #ffffff;
 }
 
-.contact__email::placeholder, .contact__name::placeholder, .contact__tel::placeholder,
-.contact textarea::placeholder {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 18px;
-  color: #ffffff;
-  padding: 10px;
-}
-
-.contact__tel {
+.contact__number {
   margin-bottom: 15px;
   border: none;
   background: rgba(0, 196, 196, 0.5);
@@ -386,6 +375,17 @@
   border: none;
 }
 
+.contact__email::placeholder, .contact__name::placeholder, .contact__number::placeholder,
+.contact textarea::placeholder {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
+  padding: 10px;
+}
+
 .contact input[type="number"]::-webkit-outer-spin-button,
 .contact input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -399,11 +399,23 @@
   margin: 0 10% 0;
 }
 
+.contact__address .address__name {
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 .contact__email1 {
   font-size: 17px;
   line-height: 25px;
   color: #262626;
   margin: 0 10% 0;
+}
+
+.contact__email1 .email1__name {
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .contact__phone {
@@ -413,8 +425,31 @@
   margin: 0 10% 0;
 }
 
+.contact__phone .phone__name {
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 .contact__button {
   margin: 2% 0 2%;
+}
+
+.contact .button__apply {
+  width: 20%;
+  height: 55px;
+  color: #f1eaea;
+  background: rgba(0, 196, 196, 0.5);
+  border: none;
+  outline: none;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  margin-left: 40%;
+  transition: 1s;
+}
+
+.contact .button__apply:hover {
+  transform: scale(1.1);
+  background: rgba(16, 116, 116, 0.8);
 }
 
 .contact__footer {
@@ -436,43 +471,12 @@
   margin: 0 5% 0;
 }
 
-.contact .address__name h3 {
-  font-style: normal;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.contact .email__name {
-  font-style: normal;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.contact .phone__name {
-  font-style: normal;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.contact .button__apply {
-  width: 20%;
-  height: 55px;
-  color: #f1eaea;
-  background: rgba(0, 196, 196, 0.5);
-  border: none;
-  outline: none;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-  margin-left: 40%;
-  transition: 1s;
-}
-
-.contact .button__apply:hover {
-  transform: scale(1.1);
-  background: rgba(16, 116, 116, 0.8);
-}
-
 .contact__copyright {
-  float: left;
+  display: block;
+  margin: 0 5% 0;
+}
+
+.contact__copyright .copyright__text {
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -481,7 +485,7 @@
   text-align: left;
 }
 
-.contact__made__text {
+.contact .made__text {
   color: #c44e4e;
 }
 

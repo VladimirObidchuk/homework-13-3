@@ -4,9 +4,16 @@ $raleway: "ralewaythin", sans-serif;
     width: 1500px;
     height: 866px;
     background: url("../img/BG2.png") center center no-repeat;
-    background-size: contain;
+    background-size: cover;
     font-family: $raleway;
     margin: 0 auto;
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 0 2%;
   }
   &__title {
     font-weight: bold;
@@ -19,7 +26,6 @@ $raleway: "ralewaythin", sans-serif;
   }
 
   &__text {
-    width: 346px;
     height: 50px;
     font-style: normal;
     font-weight: 300;
@@ -31,15 +37,12 @@ $raleway: "ralewaythin", sans-serif;
 
   &__body {
     display: flex;
-    flex-direction: column;
     align-content: center;
     justify-content: center;
     color: #262626;
+    margin: 0 10% 0;
   }
 
-  &___fields {
-    margin: 2% 0 0;
-  }
   &__name {
     margin-bottom: 15px;
     border: none;
@@ -104,16 +107,19 @@ $raleway: "ralewaythin", sans-serif;
     font-size: 17px;
     line-height: 25px;
     color: #262626;
+    margin: 0 10% 0;
   }
   &__email1 {
     font-size: 17px;
     line-height: 25px;
     color: #262626;
+    margin: 0 10% 0;
   }
   &__phone {
     font-size: 17px;
     line-height: 25px;
     color: #262626;
+    margin: 0 10% 0;
   }
 
   &__button {
@@ -121,7 +127,6 @@ $raleway: "ralewaythin", sans-serif;
   }
 
   &__footer {
-    width: 1500px;
     height: 90px;
     background: #262626;
     font-weight: 300;
@@ -132,7 +137,6 @@ $raleway: "ralewaythin", sans-serif;
     margin-top: -1px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
   }
 
   &__logo {
@@ -141,7 +145,7 @@ $raleway: "ralewaythin", sans-serif;
     margin: 0 5% 0;
   }
   .address {
-    &__name {
+    &__name h3 {
       font-style: normal;
       font-weight: bold;
       text-transform: uppercase;
@@ -178,7 +182,7 @@ $raleway: "ralewaythin", sans-serif;
       background: rgba(16, 116, 116, 0.8);
     }
   }
-  &_copyright {
+  &__copyright {
     float: left;
     font-style: normal;
     font-weight: 300;

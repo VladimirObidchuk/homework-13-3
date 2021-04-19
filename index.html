@@ -16,7 +16,7 @@
       <div class="nav" id="#home">
         <div class="row">
           <div class="nav__form">
-            <div class="col-6">
+            <div class="col-12 col-md-6">
               <div class="logo">
                 <a href="#" class="logo__style">
                   <img src="img/Logo.png" alt="Cahee Log"
@@ -51,7 +51,7 @@
         </div>
         <div class="inform">
           <div class="row">
-            <div class="col">
+            <div class="col-12 col-md-8">
               <div class="inform-block">
                 <h1 class="inform-block__title">Fresh Life</h1>
                 <p class="inform-block__text">
@@ -289,7 +289,7 @@
     </section>
     <section class="contact" id="contact">
       <div class="contact__block">
-        <div class="contact_header">
+        <div class="contact__header">
           <h1 class="contact__title">Contact</h1>
           <p class="contact__text">
             For new projects, ideas, business or anything <br />
@@ -297,41 +297,39 @@
           </p>
         </div>
         <form action="get" method="get">
-          <div class="contact__body">
-            <div class="row">
-              <div class="col">
-                <div class="contact__fields">
-                  <div class="text">
-                    <input
-                      type="text"
-                      id="#text"
-                      class="contact__name"
-                      placeholder="Your Full Name"
-                    />
-                  </div>
-                  <div class="email">
-                    <input
-                      type="email"
-                      id="#email"
-                      class="contact__email"
-                      placeholder="Your email..."
-                    />
-                  </div>
-                  <div class="number">
-                    <input
-                      type="number"
-                      id="#number"
-                      class="contact__tel"
-                      placeholder="Your phone number..."
-                    />
-                  </div>
-                  <div class="contact__comment">
-                    <textarea
-                      name="comment"
-                      id="comment"
-                      placeholder="Your comment..."
-                    ></textarea>
-                  </div>
+          <div class="row">
+            <div class="contact__body">
+              <div class="col-auto">
+                <div class="text">
+                  <input
+                    type="text"
+                    id="#text"
+                    class="contact__name"
+                    placeholder="Your Full Name"
+                  />
+                </div>
+                <div class="email">
+                  <input
+                    type="email"
+                    id="#email"
+                    class="contact__email"
+                    placeholder="Your email..."
+                  />
+                </div>
+                <div class="number">
+                  <input
+                    type="number"
+                    id="#number"
+                    class="contact__tel"
+                    placeholder="Your phone number..."
+                  />
+                </div>
+                <div class="contact__comment">
+                  <textarea
+                    name="comment"
+                    id="comment"
+                    placeholder="Your comment..."
+                  ></textarea>
                 </div>
               </div>
               <div class="col">
@@ -351,14 +349,14 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="contact__button">
-            <button type="submit" class="button__apply">APPLY</button>
+            <div class="contact__button">
+              <button type="submit" class="button__apply">APPLY</button>
+            </div>
           </div>
         </form>
-        <div class="contact__footer">
-          <div class="row">
-            <div class="col-auto offter-3">
+        <div class="row">
+          <div class="contact__footer">
+            <div class="col">
               <p class="contact__copyright">
                 © 2015 Company. All right reserved.
               </p>
@@ -368,7 +366,7 @@
                 <img src="img/logo1.png" alt="" />
               </div>
             </div>
-            <div class="col-auto">
+            <div class="col">
               <p class="contact__made">
                 Made with<span class="made__text"> love</span>by Obidchuk
               </p>

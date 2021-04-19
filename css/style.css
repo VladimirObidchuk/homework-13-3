@@ -289,9 +289,17 @@
   width: 1500px;
   height: 866px;
   background: url("../img/BG2.png") center center no-repeat;
-  background-size: contain;
+  background-size: cover;
   font-family: "ralewaythin", sans-serif;
   margin: 0 auto;
+}
+
+.contact__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 0 2%;
 }
 
 .contact__title {
@@ -305,7 +313,6 @@
 }
 
 .contact__text {
-  width: 346px;
   height: 50px;
   font-style: normal;
   font-weight: 300;
@@ -317,14 +324,10 @@
 
 .contact__body {
   display: flex;
-  flex-direction: column;
   align-content: center;
   justify-content: center;
   color: #262626;
-}
-
-.contact___fields {
-  margin: 2% 0 0;
+  margin: 0 10% 0;
 }
 
 .contact__name {
@@ -393,18 +396,21 @@
   font-size: 17px;
   line-height: 25px;
   color: #262626;
+  margin: 0 10% 0;
 }
 
 .contact__email1 {
   font-size: 17px;
   line-height: 25px;
   color: #262626;
+  margin: 0 10% 0;
 }
 
 .contact__phone {
   font-size: 17px;
   line-height: 25px;
   color: #262626;
+  margin: 0 10% 0;
 }
 
 .contact__button {
@@ -412,7 +418,6 @@
 }
 
 .contact__footer {
-  width: 1500px;
   height: 90px;
   background: #262626;
   font-weight: 300;
@@ -423,7 +428,6 @@
   margin-top: -1px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
 }
 
 .contact__logo {
@@ -432,7 +436,7 @@
   margin: 0 5% 0;
 }
 
-.contact .address__name {
+.contact .address__name h3 {
   font-style: normal;
   font-weight: bold;
   text-transform: uppercase;
@@ -467,7 +471,7 @@
   background: rgba(16, 116, 116, 0.8);
 }
 
-.contact_copyright {
+.contact__copyright {
   float: left;
   font-style: normal;
   font-weight: 300;

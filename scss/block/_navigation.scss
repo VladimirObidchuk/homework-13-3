@@ -1,18 +1,17 @@
 $raleway: "ralewaythin", sans-serif;
-.nav {
-  display: block;
-  background: url("../img/BG.png") center center no-repeat;
+.navigation {
   width: 1500px;
   height: 1000px;
   font-family: $raleway;
-  left: 0px;
-  top: 0px;
   margin: 0 auto;
-
+}
+.nav {
+  // display: block;
+  background: url("../img/BG.png") center center no-repeat;
   &__form {
     display: flex;
-    justify-items: center;
     align-items: center;
+    padding: 5% 5% 0;
   }
 }
 .row {
@@ -20,15 +19,12 @@ $raleway: "ralewaythin", sans-serif;
 }
 .logo {
   padding: 0;
-  &__style {
-    display: flex;
-    padding-left: 23%;
-  }
+  display: flex;
 }
 .menu {
-  display: flex;
   &__style {
     display: flex;
+    justify-content: center;
   }
 
   &__list {
@@ -36,11 +32,17 @@ $raleway: "ralewaythin", sans-serif;
     align-items: center;
     list-style: none;
   }
-
+  &__item {
+    font-size: 16px;
+    line-height: 27px;
+    color: #262626;
+  }
+  @media (max-width: 992px) {
+    display: none;
+  }
   &__item:not(:last-child) {
     padding: 2%;
   }
-
   &__link {
     text-decoration: none;
   }
@@ -61,14 +63,14 @@ $raleway: "ralewaythin", sans-serif;
     line-height: 70px;
   }
   &-block__text {
-    width: 30%;
+    width: 50%;
     height: 81px;
     font-style: normal;
     font-weight: 300;
     font-size: 17px;
     line-height: 27px;
     color: #262626;
-    margin-bottom: 28px;
+    margin: 0 0 5%;
   }
   &-block__button {
     width: 200px;

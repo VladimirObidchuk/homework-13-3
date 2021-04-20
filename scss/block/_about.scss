@@ -1,4 +1,4 @@
-$raleway: "ralewaythin", sans-serif;
+// $raleway: "ralewaythin", sans-serif;
 .about {
   &__block {
     width: 1500px;
@@ -18,6 +18,10 @@ $raleway: "ralewaythin", sans-serif;
   }
   &__icon {
     padding: 5%;
+    @media (max-width: 992px) {
+      // display: none;
+      opacity: 0.2;
+    }
   }
   &__text {
     padding: 11%;
@@ -32,12 +36,13 @@ $raleway: "ralewaythin", sans-serif;
 
   .text {
     &__about {
+      width: 85%;
       font-style: normal;
       font-weight: 300;
       font-size: 17px;
       line-height: 27px;
       color: #ffffff;
-      padding: 2%;
+      padding: 2% 0 0;
     }
   }
 }

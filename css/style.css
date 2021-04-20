@@ -463,17 +463,17 @@
   margin-top: -1px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .contact__logo {
   width: 64px;
   height: 27px;
-  margin: 0 5% 0;
 }
 
 .contact__copyright {
   display: block;
-  margin: 0 5% 0;
+  margin: 0 2% 0;
 }
 
 .contact__copyright .copyright__text {
@@ -485,7 +485,11 @@
   text-align: left;
 }
 
-.contact .made__text {
+.contact__made {
+  margin: 0 2% 0;
+}
+
+.contact__made .made__text {
   color: #c44e4e;
 }
 

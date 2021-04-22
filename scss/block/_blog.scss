@@ -1,13 +1,12 @@
 $raleway: "ralewaythin", sans-serif;
 .blog {
-  &__block {
-    width: 1500px;
-    height: 864px;
-    background: #b07cf7;
-    font-family: $raleway;
-    font-style: normal;
-    margin: 0 auto;
-  }
+  background: #b07cf7;
+  font-family: $raleway;
+  font-style: normal;
+  margin: 0 auto;
+  // &__block {
+
+  // }
 
   &__header {
     padding: 2% 0 2%;

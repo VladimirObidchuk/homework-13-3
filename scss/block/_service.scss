@@ -1,15 +1,10 @@
 $raleway: "ralewaythin", sans-serif;
 .service {
-  &__block {
-    width: 1500px;
-    height: 790px;
-    display: flex;
-    background: #70bfff;
-    font-family: $raleway;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-  }
+  background: #70bfff;
+  font-family: $raleway;
+  margin: 0 auto;
+  // &__block {
+  // }
 
   &__list {
     width: 100%;
@@ -22,18 +17,22 @@ $raleway: "ralewaythin", sans-serif;
   &__iten {
     display: flex;
     text-align: center;
-    padding-top: 3%;
+    justify-content: center;
+    align-items: center;
+    margin: 1% 0 1%;
   }
 
   &__text {
-    width: 300px;
+    display: flex;
+    width: 55%;
     height: 100px;
+    align-items: center;
+    justify-content: center;
     background: #fffdfd;
     font-weight: bold;
-    font-size: 20px;
-    line-height: 23px;
+    font-size: 1.25rem;
+    line-height: 1.43rem;
     color: #110f11;
-    padding-top: 8%;
     outline: none;
     border: none;
     margin-right: 2px;

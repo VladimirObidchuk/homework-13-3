@@ -1,13 +1,12 @@
 $raleway: "ralewaythin", sans-serif;
 
 .gallery {
+  background: #ffe92f;
+  .img {
+    width: 100%;
+  }
   &__block {
-    width: 1500px;
-    display: flex;
-    flex-direction: column;
-    background: #ffe92f;
     font-family: $raleway;
-    align-items: center;
     margin: 0 auto;
   }
   &__header {
@@ -23,8 +22,6 @@ $raleway: "ralewaythin", sans-serif;
   }
 
   &__text {
-    width: 623px;
-    height: 60px;
     font-style: normal;
     font-weight: 300;
     font-size: 17px;
@@ -32,24 +29,17 @@ $raleway: "ralewaythin", sans-serif;
     text-align: center;
     color: #262626;
     padding: 5% 0 5%;
+    margin: 0 auto;
   }
-  &__body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  // &__body {
+  // }
   // .body__icon {
-  //   display: flex;
-  //   flex-direction: column;
-  //   // position: relative;
-  //   margin: 0;
   // }
   .body__icon:hover {
     transform: scale(1.1);
   }
   .icon__body {
     display: flex;
-    // justify-content: center;
   }
   .icon__body1 {
     display: flex;

@@ -649,23 +649,20 @@ body {
 
 .blog__title {
   font-weight: bold;
-  font-size: 90px;
-  line-height: 80px;
+  font-size: 5.63rem;
+  line-height: 5rem;
   text-align: center;
   color: #0a0a0a;
   margin: 3%;
 }
 
 .blog__text {
-  width: 592px;
-  height: 75px;
   font-weight: 300;
-  font-size: 17px;
-  line-height: 25px;
+  font-size: 1.06rem;
+  line-height: 1.56rem;
   color: #030303;
   text-align: center;
-  margin-left: 30%;
-  margin-bottom: 3%;
+  padding: 0 19% 1%;
 }
 
 .blog__body {
@@ -684,8 +681,6 @@ body {
 }
 
 .body__content1 {
-  width: 370px;
-  height: 310px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -714,8 +709,6 @@ body {
 }
 
 .body__content2 {
-  width: 370px;
-  height: 310px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -731,8 +724,6 @@ body {
 }
 
 .body__content3 {
-  width: 370px;
-  height: 310px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -779,6 +770,14 @@ body {
   transform: scale(1.2);
 }
 
+@media (max-width: 768px) {
+  .blog__title {
+    font-size: 4rem;
+    line-height: 3rem;
+    margin: 2%;
+  }
+}
+
 .subscribe {
   background: url("../img/BG1.png") right center no-repeat;
   background-size: cover;
@@ -788,6 +787,10 @@ body {
 
 .subscribe__body {
   margin: 10% 0 0;
+}
+
+.subscribe__header {
+  width: 80%;
 }
 
 .subscribe__title {
@@ -852,6 +855,27 @@ body {
 .subscribe button,
 .subscribe input {
   overflow: visible;
+}
+
+@media (max-width: 768px) {
+  .subscribe .subscribe__body {
+    opacity: 0.5;
+  }
+  .subscribe .subscribe__enter {
+    display: flex;
+    align-items: center;
+    margin: 0 0 5%;
+    flex-direction: column;
+  }
+  .subscribe button {
+    margin: 2% 0 5%;
+  }
+  .subscribe .subscribe_header {
+    text-align: center;
+  }
+  .subscribe .subscribe__text {
+    padding: 0 20% 0;
+  }
 }
 
 @font-face {

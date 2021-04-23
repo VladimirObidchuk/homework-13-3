@@ -14,23 +14,20 @@ $raleway: "ralewaythin", sans-serif;
 
   &__title {
     font-weight: bold;
-    font-size: 90px;
-    line-height: 80px;
+    font-size: 5.63rem;
+    line-height: 5rem;
     text-align: center;
     color: #0a0a0a;
     margin: 3%;
   }
 
   &__text {
-    width: 592px;
-    height: 75px;
     font-weight: 300;
-    font-size: 17px;
-    line-height: 25px;
+    font-size: 1.06rem;
+    line-height: 1.56rem;
     color: #030303;
     text-align: center;
-    margin-left: 30%;
-    margin-bottom: 3%;
+    padding: 0 19% 1%;
   }
 
   &__body {
@@ -50,8 +47,6 @@ $raleway: "ralewaythin", sans-serif;
   }
 
   &__content1 {
-    width: 370px;
-    height: 310px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -79,8 +74,6 @@ $raleway: "ralewaythin", sans-serif;
   }
 
   &__content2 {
-    width: 370px;
-    height: 310px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -94,8 +87,6 @@ $raleway: "ralewaythin", sans-serif;
     transform: scale(1.1);
   }
   &__content3 {
-    width: 370px;
-    height: 310px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -144,5 +135,12 @@ $raleway: "ralewaythin", sans-serif;
   &_view:hover {
     background: #832b33;
     transform: scale(1.2);
+  }
+}
+@media (max-width: 768px) {
+  .blog__title {
+    font-size: 4rem;
+    line-height: 3rem;
+    margin: 2%;
   }
 }

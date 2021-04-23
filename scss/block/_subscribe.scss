@@ -7,9 +7,9 @@ $raleway: "ralewaythin", sans-serif;
   &__body {
     margin: 10% 0 0;
   }
-  // &__header {
-  //   margin: 10% 10% 3%;
-  // }
+  &__header {
+    width: 80%;
+  }
 
   &__title {
     font-weight: bold;
@@ -67,5 +67,25 @@ $raleway: "ralewaythin", sans-serif;
   button,
   input {
     overflow: visible;
+  }
+  @media (max-width: 768px) {
+    .subscribe__body {
+      opacity: 0.5;
+    }
+    .subscribe__enter {
+      display: flex;
+      align-items: center;
+      margin: 0 0 5%;
+      flex-direction: column;
+    }
+    button {
+      margin: 2% 0 5%;
+    }
+    .subscribe_header {
+      text-align: center;
+    }
+    .subscribe__text {
+      padding: 0 20% 0;
+    }
   }
 }

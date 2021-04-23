@@ -17,20 +17,26 @@ $raleway: "ralewaythin", sans-serif;
   &__icon {
     text-align: left;
     background-size: cover;
+    margin-left: -100px;
     @media (max-width: 992px) {
       opacity: 0.2;
       width: 50%;
-      display: none;
+      // display: none;
     }
-    @media (min-width: 0px) and (max-width: 992px) {
+    @media (min-width: 576px) and (max-width: 992px) {
       display: block;
-      background-image: url("../img/plate.png") center;
-      background-size: contain;
-      opacity: 0.2;
+      margin: 0 auto;
+    }
+    @media (max-width: 576px) {
+      opacity: 1;
+      margin-left: 1%;
     }
   }
   &__text {
     padding: 11%;
+    @media (max-width: 576px) {
+      padding: 5% 8% 8%;
+    }
   }
   &__title {
     font-style: normal;
@@ -41,6 +47,7 @@ $raleway: "ralewaythin", sans-serif;
     @media (max-width: 576px) {
       font-size: 60px;
       line-height: 60px;
+      text-align: center;
     }
   }
 
@@ -54,8 +61,10 @@ $raleway: "ralewaythin", sans-serif;
       color: #ffffff;
       padding: 2% 0 0;
       @media (max-width: 576px) {
+        width: 100%;
         font-size: 22px;
         line-height: 30px;
+        text-align: justify;
       }
     }
   }

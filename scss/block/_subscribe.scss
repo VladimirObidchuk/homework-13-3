@@ -1,47 +1,46 @@
 $raleway: "ralewaythin", sans-serif;
 .subscribe {
   background: url("../img/BG1.png") right center no-repeat;
+  background-size: cover;
   font-family: $raleway;
   margin: 0 auto;
-  // &__body {
-  // }
-  &__header {
-    margin: 0 10% 3%;
+  &__body {
+    margin: 10% 0 0;
   }
+  // &__header {
+  //   margin: 10% 10% 3%;
+  // }
 
   &__title {
     font-weight: bold;
-    font-size: 40px;
-    line-height: 47px;
+    font-size: 2.5rem;
+    line-height: 2.9rem;
     color: #262626;
   }
 
   &__text {
-    width: 479px;
-    height: 60px;
     font-weight: 300;
-    font-size: 17px;
-    line-height: 22px;
+    font-size: 1.06rem;
+    line-height: 1.6rem;
     color: #262626;
-    // padding: 5% 0;
   }
   &__enter {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    margin: 0 0 5%;
   }
-  &__input #email {
-    width: 570px;
+  &__enter #email {
+    width: 60%;
     height: 55px;
-    display: flex;
     font-weight: 300;
     font-size: 20px;
     line-height: 18px;
     color: rgba(0, 0, 0, 0.5);
     padding-left: 3%;
-    margin-left: 20%;
     border: 1px solid #262626;
+    margin: 5% 5% 0 0;
   }
-  &__input #email::placeholder {
+  &__enter #email::placeholder {
     font-weight: 300;
     font-size: 20px;
     line-height: 20px;
@@ -64,5 +63,9 @@ $raleway: "ralewaythin", sans-serif;
     transform: scale(1.1);
     color: salmon;
     background: orangered;
+  }
+  button,
+  input {
+    overflow: visible;
   }
 }

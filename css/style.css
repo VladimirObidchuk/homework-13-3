@@ -7,15 +7,8 @@
   transition: 0.5s;
 }
 
-::after .img-fluid,
-::before .img-fluid,
-* .img-fluid {
-  max-width: 100%;
-  height: auto;
-}
-
 body {
-  width: 1500px;
+  font-style: normal;
 }
 
 .navigation {
@@ -23,6 +16,13 @@ body {
   background-size: cover;
   font-family: "ralewaythin", sans-serif;
   margin: 0 auto;
+}
+
+@media (max-width: 576px) {
+  .navigation {
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-left: 2%;
+  }
 }
 
 .nav {
@@ -33,10 +33,6 @@ body {
   display: flex;
   align-items: center;
   padding: 5% 5% 0;
-}
-
-.row {
-  --bs-gutter-x: 0;
 }
 
 .logo {
@@ -189,27 +185,38 @@ body {
 .about__icon {
   text-align: left;
   background-size: cover;
+  margin-left: -100px;
 }
 
 @media (max-width: 992px) {
   .about__icon {
     opacity: 0.2;
     width: 50%;
-    display: none;
   }
 }
 
-@media (min-width: 0px) and (max-width: 992px) {
+@media (min-width: 576px) and (max-width: 992px) {
   .about__icon {
     display: block;
-    background-image: url("../img/plate.png") center;
-    background-size: contain;
-    opacity: 0.2;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .about__icon {
+    opacity: 1;
+    margin-left: 1%;
   }
 }
 
 .about__text {
   padding: 11%;
+}
+
+@media (max-width: 576px) {
+  .about__text {
+    padding: 5% 8% 8%;
+  }
 }
 
 .about__title {
@@ -224,6 +231,7 @@ body {
   .about__title {
     font-size: 60px;
     line-height: 60px;
+    text-align: center;
   }
 }
 
@@ -239,8 +247,10 @@ body {
 
 @media (max-width: 576px) {
   .about .text__about {
+    width: 100%;
     font-size: 22px;
     line-height: 30px;
+    text-align: justify;
   }
 }
 
@@ -248,6 +258,15 @@ body {
   background: #70bfff;
   font-family: "ralewaythin", sans-serif;
   margin: 0 auto;
+}
+
+.service__block {
+  margin: 10% 0 0;
+}
+
+.service .img-fluid {
+  max-width: 100%;
+  height: auto;
 }
 
 .service__list {
@@ -261,7 +280,6 @@ body {
 
 .service__iten {
   display: flex;
-  text-align: center;
   justify-content: center;
   align-items: center;
   margin: 1% 0 1%;
@@ -278,6 +296,7 @@ body {
   font-size: 1.25rem;
   line-height: 1.43rem;
   color: #110f11;
+  text-align: center;
   outline: none;
   border: none;
   margin-right: 2px;
@@ -289,6 +308,7 @@ body {
   background: #fffdfd;
   padding-top: 6%;
   outline: none;
+  text-align: center;
 }
 
 .service__imeg:hover {
@@ -297,16 +317,13 @@ body {
 }
 
 .service__icon {
-  width: 100%;
-  height: 100%;
   background: url("../img/Tomatoes.png") center center no-repeat;
   background-size: contain;
 }
 
 .service__title {
   font-weight: bold;
-  font-size: 100px;
-  line-height: 106px;
+  font-size: 6.25rem;
   color: #ffffff;
   padding-top: 32%;
   margin: 0;
@@ -316,36 +333,29 @@ body {
   background: #ffe92f;
 }
 
-.gallery .img {
-  width: 100%;
-}
-
 .gallery__block {
   font-family: "ralewaythin", sans-serif;
+  padding: 2% 0 0;
   margin: 0 auto;
-}
-
-.gallery__header {
-  margin: 5% 0 5%;
 }
 
 .gallery__title {
   font-weight: bold;
-  font-size: 90px;
-  line-height: 106px;
+  font-size: 5.63rem;
   text-align: center;
   color: #262626;
   margin: 0;
 }
 
 .gallery__text {
+  max-width: 50%;
   font-style: normal;
   font-weight: 300;
-  font-size: 17px;
-  line-height: 20px;
+  font-size: 1.06rem;
+  line-height: 1.5rem;
   text-align: center;
   color: #262626;
-  padding: 5% 0 5%;
+  padding: 2% 0 2%;
   margin: 0 auto;
 }
 
@@ -353,21 +363,18 @@ body {
   transform: scale(1.1);
 }
 
-.gallery .icon__body {
-  display: flex;
-}
-
-.gallery .icon__body1 {
-  display: flex;
+.gallery .body__icon1:hover {
+  transform: scale(1.1);
 }
 
 .gallery__footer {
-  margin: 3% 0 7%;
+  padding: 3% 0 3%;
+  text-align: center;
 }
 
 .gallery button {
-  width: 200px;
-  height: 55px;
+  width: 15%;
+  height: 3.5rem;
   background: #5585a2;
   box-shadow: 0px 5px 7px rgba(5, 5, 5, 0.5);
   outline: none;
@@ -383,8 +390,7 @@ body {
 }
 
 .contact {
-  background: url("../img/BG2.png") center center no-repeat;
-  background-size: cover;
+  background: url("../img/BG2.png") right center no-repeat;
   font-family: "ralewaythin", sans-serif;
   margin: 0 auto;
 }
@@ -725,49 +731,48 @@ body {
 
 .subscribe {
   background: url("../img/BG1.png") right center no-repeat;
+  background-size: cover;
   font-family: "ralewaythin", sans-serif;
   margin: 0 auto;
 }
 
-.subscribe__header {
-  margin: 0 10% 3%;
+.subscribe__body {
+  margin: 10% 0 0;
 }
 
 .subscribe__title {
   font-weight: bold;
-  font-size: 40px;
-  line-height: 47px;
+  font-size: 2.5rem;
+  line-height: 2.9rem;
   color: #262626;
 }
 
 .subscribe__text {
-  width: 479px;
-  height: 60px;
   font-weight: 300;
-  font-size: 17px;
-  line-height: 22px;
+  font-size: 1.06rem;
+  line-height: 1.6rem;
   color: #262626;
 }
 
 .subscribe__enter {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
+  margin: 0 0 5%;
 }
 
-.subscribe__input #email {
-  width: 570px;
+.subscribe__enter #email {
+  width: 60%;
   height: 55px;
-  display: flex;
   font-weight: 300;
   font-size: 20px;
   line-height: 18px;
   color: rgba(0, 0, 0, 0.5);
   padding-left: 3%;
-  margin-left: 20%;
   border: 1px solid #262626;
+  margin: 5% 5% 0 0;
 }
 
-.subscribe__input #email::placeholder {
+.subscribe__enter #email::placeholder {
   font-weight: 300;
   font-size: 20px;
   line-height: 20px;
@@ -792,6 +797,11 @@ body {
   transform: scale(1.1);
   color: salmon;
   background: orangered;
+}
+
+.subscribe button,
+.subscribe input {
+  overflow: visible;
 }
 
 @font-face {

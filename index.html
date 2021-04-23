@@ -14,7 +14,7 @@
   <body>
     <section class="navigation">
       <div class="container">
-        <div class="nav" id="#home">
+        <div class="nav" id="home">
           <div class="row justify-content-around align-items-center">
             <div class="col-auto">
               <div class="logo">
@@ -69,10 +69,14 @@
     <section class="about" id="about">
       <div class="about__block">
         <div class="container">
-          <div class="row justify-content-around align-content-center">
-            <div class="col-2 col-md-2 col-xl-5">
+          <div class="row justify-content-around">
+            <div class="col-12 col-md-2 col-xl-5">
               <div class="about__icon">
-                <img src="img/plate.png" class=".img-fluid" alt="plate" />
+                <picture>
+                  <!-- <source media="(max-width: 0px )" srcset="img/plate_1.png" /> -->
+                  <source media="(max-width: 576px)" srcset="img/plate13.png" />
+                  <img src="img/plate.png" class=".img-fluid" alt="plate" />
+                </picture>
               </div>
             </div>
             <div class="col-12 col-md-10 col-xl-6">
@@ -95,13 +99,13 @@
         </div>
       </div>
     </section>
-    <section class="service" id="service">
-      <div class="service">
+    <!-- <section class="service" id="service">
+      <div class="service_block">
         <div class="container">
-          <div class="row">
-            <div class="col">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-6">
               <div class="service__list">
-                <div class="row">
+                <div class="row justify-content-center align-items-center">
                   <div class="col">
                     <div class="service__iten">
                       <p class="service__text">Online Shopping</p>
@@ -115,7 +119,6 @@
                   <div class="col">
                     <div class="service__iten">
                       <p class="service__text">Quality Product</p>
-
                       <div class="service__imeg">
                         <img src="img/Plant.png" alt="Plant" />
                       </div>
@@ -146,7 +149,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-auto">
+            <div class="col-6">
               <div class="service__icon">
                 <h1 class="service__title">Our Services</h1>
               </div>
@@ -154,8 +157,8 @@
           </div>
         </div>
       </div>
-    </section>
-    <!--   <section class="gallery" id="gallery">
+    </section> -->
+    <!-- <section class="gallery" id="gallery">
       <div class="container">
         <div class="gallery__block">
           <div class="gallery__header">
@@ -168,7 +171,7 @@
             </p>
           </div>
           <div class="gallery__body">
-            <div class="row">
+            <div class="row gy-4">
               <div class="col-12 col-md-8">
                 <div class="body__icon">
                   <img src="img/Image-5.png" class="img-fluid" alt="" />
@@ -176,11 +179,11 @@
               </div>
               <div class="col-12 col-md-4">
                 <div class="body__icon">
-                  <div class="row">
-                    <div class="col-6 col-md-12">
+                  <div class="row gy-4">
+                    <div class="col-12 col-md-12">
                       <img src="img/Image-4.png" class="img-fluid" alt="" />
                     </div>
-                    <div class="col-6 col-md-12">
+                    <div class="col-12 col-md-12">
                       <img src="img/Image-3.png" class="img-fluid" alt="" />
                     </div>
                   </div>
@@ -188,12 +191,12 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-6">
+              <div class="col-6 gy-4">
                 <div class="body__icon">
                   <img src="img/Image-2.png" class="img-fluid" alt="" />
                 </div>
               </div>
-              <div class="col-6">
+              <div class="col-6 gy-4">
                 <div class="body__icon">
                   <img src="img/Image-1.png" class="img-fluid" alt="" />
                 </div>
@@ -205,39 +208,42 @@
           </div>
         </div>
       </div>
-    </section>
-      <section class="_subscribe">
+    </section> -->
+    <!-- <section class="subscribe">
       <div class="container">
-        <div class="row">
-          <div class="col-auto">
-            <h1 class="subscribe__title">Subscribe To Us</h1>
-            <p class="subscribe__text">
-              Dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-              minim veniam.
-            </p>
-          </div>
-          <div class="col"></div>
-        </div>
-      </div>
-      <div class="subscribe__enter">
-        <div class="row">
-          <div class="col">
-            <div class="subscribe__input">
-              <input
-                type="email"
-                id="email"
-                placeholder="Your email address..."
-              />
+        <div class="subscribe_body">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <div class="subscribe_header">
+                <h1 class="subscribe__title">Subscribe To Us</h1>
+                <p class="subscribe__text">
+                  Dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                  minim veniam.
+                </p>
+              </div>
             </div>
           </div>
-          <div class="col">
-            <button type="submit" class="subscribe__button">subscribe</button>
+          <div class="row">
+            <div class="col-8">
+              <form action="#" class="subscribe__enter">
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Your email address..."
+                />
+                <div class="col-4">
+                  <button type="submit" class="subscribe__button">
+                    subscribe
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-    <section class="blog" id="blog">
+    </section> -->
+    <!--  <section class="blog" id="blog">
       <div class="container">
         <div class="blog__header">
           <h1 class="blog__title">Blog</h1>

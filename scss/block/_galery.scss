@@ -56,4 +56,20 @@ $raleway: "ralewaythin", sans-serif;
     outline: none;
     border: none;
   }
+  @media (max-width: 998px) {
+    .gallery__text {
+      max-width: 70%;
+    }
+  }
+  @media (max-width: 768px) {
+    button {
+      width: 25%;
+    }
+  }
+  @media (max-width: 576px) {
+    button {
+      width: 30%;
+      height: 3.5rem;
+    }
+  }
 }

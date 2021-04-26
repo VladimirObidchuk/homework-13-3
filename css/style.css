@@ -440,27 +440,26 @@ body {
 }
 
 .contact {
-  background: url("../img/BG2.png") right center no-repeat;
+  background: url("../img/BG2.png") center no-repeat;
   font-family: "ralewaythin", sans-serif;
   margin: 0 auto;
 }
 
 .contact__title {
   font-weight: bold;
-  font-size: 90px;
-  line-height: 20px;
+  font-size: 5.63rem;
+  line-height: 1.25rem;
   text-align: center;
   color: #262626;
   padding: 2% 0 1%;
-  margin: 5% 0 2%;
 }
 
 .contact__text {
   height: 50px;
   font-style: normal;
   font-weight: 300;
-  font-size: 17px;
-  line-height: 25px;
+  font-size: 1.06rem;
+  line-height: 1.56rem;
   color: #262626;
   text-align: center;
 }
@@ -477,8 +476,8 @@ body {
   width: 100%;
   display: block;
   height: 50px;
-  font-size: 15px;
-  line-height: 18px;
+  font-size: 1rem;
+  line-height: 1.13rem;
   color: #ffffff;
 }
 
@@ -489,8 +488,8 @@ body {
   width: 100%;
   display: block;
   height: 50px;
-  font-size: 15px;
-  line-height: 18px;
+  font-size: 1rem;
+  line-height: 1.13rem;
   color: #ffffff;
 }
 
@@ -507,7 +506,7 @@ body {
 }
 
 .contact textarea {
-  width: 558px;
+  width: 100%;
   height: 250px;
   background: rgba(0, 196, 196, 0.5);
   font-style: normal;
@@ -596,6 +595,7 @@ body {
 }
 
 .contact__footer {
+  width: 100%;
   height: 90px;
   background: #262626;
   font-weight: 300;

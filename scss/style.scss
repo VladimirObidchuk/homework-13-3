@@ -5,16 +5,11 @@
   margin: 0;
   box-sizing: border-box;
   transition: 0.5s;
-
-  // .img-fluid {
-  //   max-width: 100%;
-  //   height: auto;
-  // }
 }
 body {
-  // max-width: 1500px;
   $raleway: "ralewaythin", sans-serif;
   font-style: normal;
+  margin: 0 auto;
 }
 
 @import "../scss/block/navigation";

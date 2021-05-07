@@ -36,26 +36,21 @@ $raleway: "ralewaythin", sans-serif;
     margin-bottom: 2%;
   }
 }
-.body {
-  &_header {
-    width: 60px;
-    height: 60px;
+.main {
+  &__header {
+    width: 15%;
     background: rgba(38, 38, 38, 0.5);
     border-radius: 5px;
     text-align: center;
-    margin: 4% 7% 0;
   }
-
-  &__content1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+  &__content {
+    height: 90%;
     color: #ffffff;
-    background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
-    background: url(../img/thumbnail.png) center no-repeat;
+    margin: 0 2% 0;
+    padding: 5%;
     transition: 1s;
   }
-  &__content1:hover {
+  &__content:hover {
     transform: scale(1.1);
   }
 
@@ -72,32 +67,14 @@ $raleway: "ralewaythin", sans-serif;
     line-height: 10px;
     text-transform: uppercase;
   }
-
-  &__content2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    color: #ffffff;
-    background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
-    margin-left: 10%;
-    background: url(../img/thumbnail1.png) center no-repeat;
-    transition: 1s;
+  .content1 {
+    background: url(../img/thumbnail.png) no-repeat;
   }
-  &__content2:hover {
-    transform: scale(1.1);
+  .content2 {
+    background: url(../img/thumbnail1.png) no-repeat;
   }
-  &__content3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    color: #ffffff;
-    background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
-    margin-left: 20%;
-    background: url(../img/thumbnail2.png) center no-repeat;
-    transition: 1s;
-  }
-  &__content3:hover {
-    transform: scale(1.1);
+  .content3 {
+    background: url(../img/thumbnail2.png) no-repeat;
   }
 }
 .content {
@@ -116,10 +93,6 @@ $raleway: "ralewaythin", sans-serif;
     margin: 0 0 20px 20px;
   }
 }
-// .body {
-//   //   &__footer {
-//   //   }
-// }
 .button {
   &_view {
     width: 15%;

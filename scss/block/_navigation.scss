@@ -3,16 +3,12 @@ $raleway: "ralewaythin", sans-serif;
   background: url("../img/BG.png") right center no-repeat;
   background-size: cover;
   font-family: $raleway;
+
   .row {
     --bs-gutter-x: 0;
   }
-
-  // @media (max-width: 575.98px) {
-  //   background-color: rgba(255, 255, 255, 0.5);
-  //   margin-left: 2%;
-  // }
   .container {
-    // width: 100%;
+    width: 100%;
     margin: 0;
     padding: 0;
   }
@@ -42,10 +38,10 @@ $raleway: "ralewaythin", sans-serif;
     }
     .logo img {
       max-width: 100%;
-      margin: 5%;
+      margin: 2% 1%;
     }
     .menu {
-      margin: 5% 0 5% 5%;
+      margin: 2% 1%;
 
       &__list {
         display: flex;
@@ -55,9 +51,6 @@ $raleway: "ralewaythin", sans-serif;
         font-size: 1.2rem;
         line-height: 27px;
         color: #262626;
-      }
-
-      &__item {
         margin-left: 3%;
       }
       &__link {
@@ -77,9 +70,10 @@ $raleway: "ralewaythin", sans-serif;
       cursor: pointer;
       transition: all 0.4s;
       position: relative;
-      width: 10%;
+      width: 50px;
+      height: 50px;
       z-index: 3;
-      left: 85%;
+      left: 82%;
       @media (max-width: 991.98px) {
         display: block;
       }
@@ -93,10 +87,10 @@ $raleway: "ralewaythin", sans-serif;
         height: 2px;
       }
       &::before {
-        bottom: 8px;
+        bottom: 18px;
       }
       &::after {
-        top: 10px;
+        top: 15px;
       }
 
       .menu-open & {
@@ -106,30 +100,29 @@ $raleway: "ralewaythin", sans-serif;
         }
         &::before {
           transform: rotate(405deg);
-          bottom: -1px;
+          bottom: 24px;
         }
         &::after {
           transform: rotate(-405deg);
-          top: 0;
+          top: 24px;
         }
       }
     }
     .mobile {
       position: fixed;
-      left: 0;
-      top: 10%;
+      right: 0px;
+      top: 60px;
       display: none;
       transition: all 0.3s;
       pointer-events: none;
-      transform: translateX(425%);
+      transform: translateX(100%);
       margin: 0 auto;
       .menu-open & {
-        transform: translateX(300%);
+        transform: translateX(0%);
         pointer-events: initial;
       }
       &__list {
         display: block;
-        margin: 13% 0 0;
       }
       &__list li {
         text-align: center;
@@ -139,9 +132,8 @@ $raleway: "ralewaythin", sans-serif;
           rgba(86, 245, 55, 0.5)
         );
         list-style: none;
-        padding: 7% 0 5%;
+        padding: 8% 0 8%;
         cursor: pointer;
-        transform: scale(1.2);
         margin: 0 auto;
       }
       &__item a {
@@ -149,11 +141,8 @@ $raleway: "ralewaythin", sans-serif;
         line-height: 1.5rem;
         text-decoration: none;
       }
-      &__item:not(:last-child) {
-        margin-bottom: 13%;
-      }
       @media (max-width: 991.98px) {
-        display: flex;
+        display: block;
       }
     }
   }
@@ -161,10 +150,15 @@ $raleway: "ralewaythin", sans-serif;
   .inform {
     padding-top: 30%;
     padding-left: 10%;
+    @media (max-width: 575.98px) {
+      background: rgba(255, 255, 255, 0.7);
+      height: 100%;
+    }
     @media (max-width: 767.98px) {
       padding-top: 10%;
       padding-left: 23%;
     }
+
     @media (min-width: 767.98px) and (max-width: 991.98px) {
       padding-top: 29%;
       padding-left: 18%;
@@ -174,7 +168,8 @@ $raleway: "ralewaythin", sans-serif;
       font-size: 3.75rem;
       line-height: 4.38rem;
       @media (max-width: 575.98px) {
-        line-height: 2.5rem;
+        line-height: 1.5rem;
+        font-size: 2.75rem;
       }
       @media (min-width: 575.98px) and (max-width: 767.98px) {
         line-height: 1.5rem;
@@ -188,13 +183,12 @@ $raleway: "ralewaythin", sans-serif;
       line-height: 1.69rem;
       color: #262626;
       margin: 0 0 5%;
-      @media (min-width: 0) and (max-width: 575.98px) {
-        // width: 100%;
+      @media (max-width: 575.98px) {
         line-height: 2rem;
+        width: 90%;
         margin: 0;
       }
       @media (min-width: 575.98px) and (max-width: 767.98px) {
-        width: 70%;
         line-height: 1.5rem;
         margin: 0;
       }
@@ -208,17 +202,18 @@ $raleway: "ralewaythin", sans-serif;
       background: #ff6033;
       box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
       margin: 5% 1% 10%;
-      @media (min-width: 0) and (max-width: 575.98px) {
-        width: 40%;
+
+      @media (max-width: 575.98px) {
+        width: 50%;
         line-height: 2.5rem;
       }
       @media (min-width: 575.98px) and (max-width: 767.98px) {
         width: 45%;
         line-height: 2.5rem;
       }
-      &-block__button:hover {
-        transform: scale(1.2);
-      }
+    }
+    &-block__button:hover {
+      transform: scale(1.2);
     }
   }
 }

@@ -18,23 +18,22 @@ $raleway: "ralewaythin", sans-serif;
     text-align: left;
     background-size: cover;
     margin-left: -100px;
-    @media (max-width: 992px) {
+    @media (max-width: 991.98px) {
       opacity: 0.2;
       width: 50%;
       // display: none;
     }
-    @media (min-width: 576px) and (max-width: 992px) {
+    @media (min-width: 575.98px) and (max-width: 991.98px) {
       display: block;
-      margin: 0 auto;
+      margin: 0;
     }
-    @media (max-width: 576px) {
-      opacity: 1;
+    @media (max-width: 767.98px) {
       margin-left: 1%;
     }
   }
   &__text {
     padding: 11%;
-    @media (max-width: 576px) {
+    @media (max-width: 575.98px) {
       padding: 5% 8% 8%;
     }
   }
@@ -44,7 +43,7 @@ $raleway: "ralewaythin", sans-serif;
     font-size: 90px;
     line-height: 45px;
     color: #ffffff;
-    @media (max-width: 576px) {
+    @media (max-width: 767.98px) {
       font-size: 60px;
       line-height: 60px;
       text-align: center;
@@ -60,7 +59,7 @@ $raleway: "ralewaythin", sans-serif;
       line-height: 27px;
       color: #ffffff;
       padding: 2% 0 0;
-      @media (max-width: 576px) {
+      @media (max-width: 767.98px) {
         width: 100%;
         font-size: 22px;
         line-height: 30px;
